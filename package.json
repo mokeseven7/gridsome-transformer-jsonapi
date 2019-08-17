@@ -1,10 +1,13 @@
 {
   "name": "@mokeseven/gridsome-transformer-jsonapi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A gridsome transformer for parsing JSON API spec'd API's",
   "main": "dist/jsonapi.cjs.js",
   "module": "dist/jsonapi.esm.js",
   "browser": "dist/jsonapi.umd.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
