@@ -1,12 +1,10 @@
-export default function jsonapi(json){
-	
-	try{
-		const parsed = JSON.parse(json);
-
-		return parsed;
-	}catch(e){
-		console.log('unable to parse json', e)
-	}
-
-	return parsed;
+export default function jsonapi( callback = null ) {
+  return {
+    parse: function(string){
+      if(typeof(callback) === 'function'){
+        return JSON.parse(string, callback);
+      }
+      return JSON.parse(string)
+    },
+  };
 }

@@ -1,17 +1,30 @@
 {
   "name": "@mokeseven/gridsome-transformer-jsonapi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A gridsome transformer for parsing JSON API spec'd API's",
-  "main": "dist/jsonapi.cjs.js",
-  "module": "dist/jsonapi.esm.js",
-  "browser": "dist/jsonapi.umd.js",
+  "main": "dist/rollup-jest-boilerplate.cjs.js",
+  "module": "dist/rollup-jest-boilerplate.esm.js",
+  "browser": "dist/rollup-jest-boilerplate.umd.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "rm -Rf dist"
+    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test:update": "jest -u --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "prepare": "yarn build",
+    "pretest": "yarn run build"
+  },
+  "renovate": {
+    "extends": [
+      "config:js-lib"
+    ],
+    "automerge": true,
+    "major": {
+      "automerge": false
+    },
+    "automergeType": "branch"
   },
   "files": [
     "dist"
@@ -23,9 +36,18 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "concurrently": "^4.1.2",
+    "coveralls": "^3.0.6",
+    "jest": "^24.9.0",
     "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.0.2",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "serve": "^11.1.0"
   },
   "repository": {
     "type": "git",
