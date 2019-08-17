@@ -1,0 +1,1 @@
+![travis build](https://img.shields.io/travis/mokeseven7/gridsome-transformer-jsonapi.svg?)

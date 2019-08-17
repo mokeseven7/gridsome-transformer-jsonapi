@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: mike@dopefruit.com
+  api_key:
+    secure: Y2MFSln90J0I3NhgoKXFKNeboc+GdW8xbH5BLfOCZQrNnwM+gw7TXw3Cima+Xfyg8s409R+Mo4ZPvrPNX5tNKu+LjgOGQZdcOhyXdIpYjY/I8t6vUMvK0bdfYMEifko4yGfHsS2HyzavwjxzwBluPKip+hfttBkgyF+T7QqRX2tCa1CjAv1+3MhlK6RHY+PlYsYf8fSQUYXkUZGwYj29/XLcZ2sWCnsE81PanQTctNgEdoBrPLcCSzhQTk44jhlPzpcfkJKUr8/1U6DJ9SXpyv8xes/JKy9OE2dCLGJcx9LdlQCk7sih4qOOycnpvy1iMbYdVJnLnffv4SsnCXoVzGXgPTJPlZVrEczzxfT+hvzsW1bFZjuSeEJ4waY3nlCQAiIgwepcMXjBrJmRkbFihZ/cvSk7Qi7kc8aM+Q3iuQu2ZpXCGpv6nta6pYE0zZI2Yjb2Rvq7v8Ad/DpK/1G8VqDgucZ5VKp9NdKhZpq2gTmc5MpMVAIaMTcF2WCvPebPpkp7E8ptyZO3KgSspUtpyU+jp27Z/jO3WqpZoHZSLF1n715XcaWGPNnVSVGU3tJOBVmeGsn5lY6XVXclkOW6eKLgwJaU5N70Xu2G3NTvJDZBK4uWvq2+dODi9g7WosluIXA9AAomWu8o4y0FAxMfOvIqSiaaMhEbH6ZFo462smk=
+  on:
+    tags: true
+    repo: mokeseven7/gridsome-transformer-jsonapi

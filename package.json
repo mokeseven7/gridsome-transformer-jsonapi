@@ -1,5 +1,5 @@
 {
-  "name": "@mokeseven7/gridsome-transformer-jsonapi",
+  "name": "@mokeseven/gridsome-transformer-jsonapi",
   "version": "0.0.1",
   "description": "A gridsome transformer for parsing JSON API spec'd API's",
   "main": "dist/jsonapi.cjs.js",
