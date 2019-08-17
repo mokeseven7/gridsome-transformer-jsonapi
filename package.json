@@ -17,15 +17,20 @@
   "keywords": [
     "gridsome"
   ],
-  "author": {
-    "name": "Michael McGrath",
-    "email": "mike@dopefruit.com"
-  },
-  "license": "ISC",
+  "author": "Michael McGrath <mike@dopefruit.com>",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "rollup": "^1.19.4",
     "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-node-resolve": "^5.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mokeseven7/gridsome-transformer-jsonapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mokeseven7/gridsome-transformer-jsonapi/issues"
+  },
+  "homepage": "https://github.com/mokeseven7/gridsome-transformer-jsonapi#readme"
 }
