@@ -1,6 +1,6 @@
 {
   "name": "@mokeseven/gridsome-transformer-jsonapi",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A gridsome transformer for parsing JSON API spec'd API's",
   "main": "dist/rollup-jest-boilerplate.cjs.js",
   "module": "dist/rollup-jest-boilerplate.esm.js",
@@ -20,7 +20,8 @@
     "extends": [
       "config:js-lib"
     ],
-    "automerge": false
+    "automerge": false,
+    "rangeStrategy": "replace"
   },
   "files": [
     "dist"
