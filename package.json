@@ -20,11 +20,7 @@
     "extends": [
       "config:js-lib"
     ],
-    "automerge": true,
-    "major": {
-      "automerge": false
-    },
-    "automergeType": "branch"
+    "automerge": false
   },
   "files": [
     "dist"
